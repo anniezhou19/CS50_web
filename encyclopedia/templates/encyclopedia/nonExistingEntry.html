@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    NonExistigEntry
+{% endblock %}
+
+{% block body %}
+    <h3>{{ entryTitle }}?</h3>
+    It looks like your entry doesn´t exist yet.
+    Click <a href="{% url 'newpage' %}">here</a> to create your entry!
+{% endblock %}
